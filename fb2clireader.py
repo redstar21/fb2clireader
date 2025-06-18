@@ -73,7 +73,16 @@ def reader(stdscr, paragraphs, current_page, book_id):
     stdscr.nodelay(False)
     curses.start_color()
     curses.use_default_colors()
-    curses.init_pair(2, curses.COLOR_WHITE, -1)
+    curses.init_pair(2, 251, -1)
+
+# цвет шрифта
+#250	светло-серый
+#251	очень светло-серый
+#252	серо-белый
+#253	почти белый
+#254	ещё белее
+#255	почти чисто белый (мягкий)
+
     curses.init_pair(3, curses.COLOR_CYAN, -1)
 
     attr_normal = curses.color_pair(2)
